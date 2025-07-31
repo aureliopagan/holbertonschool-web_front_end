@@ -1,0 +1,155 @@
+/* adding the theme section to dark mode */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+
+    /* navbar */
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
+
+    /* the new addition */
+    --section-tagline-margin: 0;
+}
+
+/* universal box sizing rule */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    /* body text color and font settings */
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+}
+
+a:link {
+    /* Link style for unvisited links */
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:visited {
+    /* Style for visited links */
+    font-style: italic;
+}
+
+a:hover {
+    /* Hover style for links */
+    text-decoration: underline;
+}
+
+a:active {
+    /* Style when a link is clicked */
+    background-color: var(--color-light-grey);
+}
+
+.visually-hidden {
+    /* Hide elements visually but keep for screen readers */
+    display: none;
+}
+
+.card-category {
+    /* Style for category cards */
+    color: var(--color-primary);
+}
+
+.section {
+    /* Section container styles */
+    padding: var(--section-padding);
+}
+
+.section-header {
+    /* Header inside section */
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+}
+
+.section-title {
+    /* Title inside section */
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+.section-tagline {
+    /* Tagline inside section */
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-tagline-margin);
+}
+
+.section-body {
+    /* Content area of section */
+    padding: var(--section-body-padding);
+}
+
+.section-footer {
+    /* Footer inside section */
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+.footer {
+    /* Page footer styles */
+    padding: var(--footer-padding);
+}
+
+.container {
+    /* Content width and centering */
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-menu {
+    /* Navigation menu float */
+    float: right;
+}
